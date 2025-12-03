@@ -7,172 +7,174 @@
 
   <style>
     body {
-      margin: 0;
-      padding: 0;
       font-family: "Arial", sans-serif;
-      background: #f4f7fb;
-      color: #333;
-      line-height: 1.7;
+      margin: 0;
+      background: #f4f6f9;
+      color: #222;
+      line-height: 1.6;
     }
 
-    /* Navigation Bar */
-    .navbar {
+    /* Header */
+    header {
       background: #2F4858;
-      padding: 15px 20px;
-      display: flex;
-      justify-content: center;
-      gap: 30px;
+      padding: 25px;
+      text-align: center;
+      color: white;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+      letter-spacing: 1px;
     }
 
-    .navbar a {
-      color: #ffffff;
-      text-decoration: none;
-      font-size: 16px;
-      font-weight: bold;
-    }
-
-    .navbar a:hover {
-      text-decoration: underline;
-    }
-
-    /* Main Content */
     .container {
       max-width: 900px;
-      background: #fff;
-      margin: 40px auto;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      margin: auto;
+      padding: 20px;
     }
 
-    h1, h2 {
+    h2 {
       color: #2F4858;
+      border-left: 5px solid #4A6FA5;
+      padding-left: 10px;
+      margin-top: 35px;
     }
 
-    ul li {
-      margin-bottom: 8px;
+    a { color: #1B76D1; }
+
+    /* Card sections */
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 20px 0;
+      border: 1px solid #ddd;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
     }
 
     /* Footer */
-    .footer {
+    footer {
       text-align: center;
       padding: 20px;
-      background: #2F4858;
-      color: #fff;
       margin-top: 40px;
-      font-size: 14px;
+      background: #2F4858;
+      color: white;
     }
 
+    /* Mobile */
+    @media (max-width: 600px) {
+      header h1 { font-size: 26px; }
+      .container { padding: 15px; }
+    }
   </style>
 </head>
 
 <body>
 
-<!-- NAVIGATION -->
-<div class="navbar">
-  <a href="#home">Home</a>
-  <a href="#about">About</a>
-  <a href="#v4">AURORA V4</a>
-  <a href="#versions">All Versions</a>
-  <a href="#contact">Contact</a>
-</div>
+<header>
+  <h1>AURORA – Quantum AI Governance Lab</h1>
+  <p>Developing advanced oversight for intelligent & autonomous systems</p>
+</header>
 
-<!-- MAIN PAGE -->
-<div class="container" id="home">
+<div class="container">
 
-  <h1>AURORA – AI Governance Research Project</h1>
-  <p><strong>Researcher:</strong> Mostafa Abdel-Samee</p>
-  <p><strong>Email:</strong> Mostafa.AI.GOVERNINC.LAP@proton.me</p>
-
-  <hr>
-
-  <h2 id="about">About AURORA</h2>
-  <p>
-AURORA is a comprehensive research project exploring advanced AI governance, digital oversight,
-and quantum-assisted threat classification for intelligent operating environments.  
-The project addresses emerging global risks driven by AI misuse, including deepfake-enabled fraud,
-automated intrusion, systemic vulnerabilities, and digitally enhanced attacks targeting banking systems,
-government infrastructures, and sensitive digital networks.
-  </p>
-
-  <p>
-The research also introduces the <strong>bio-digital relational model</strong>, emphasizing collaborative
-interaction between human researchers and AI systems for enhanced security, transparency, and resilience.
-  </p>
-
-  <hr>
-
-  <h2 id="v4">Latest Release – AURORA V4</h2>
-  <p>
-<b>AURORA V4</b> represents the full integrated edition of the project, containing 91 research documents,
-technical frameworks, conceptual models, and system architectures.
-  </p>
-  <p>
-<b>DOI:</b>  
-<a href="https://doi.org/10.5281/zenodo.17710737" target="_blank">10.5281/zenodo.17710737</a>
-  </p>
-
-  <hr>
-
-  <h2 id="versions">Previous Versions</h2>
-  <p><b>Parent Record:</b></p>
-  <p>
-<a href="https://doi.org/10.5281/zenodo.17095289" target="_blank">
-10.5281/zenodo.17095289
-</a>
-  </p>
-
-  <hr>
-
-  <h2 id="contact">Contact</h2>
-  <p>
-For academic collaboration, inquiries, or professional communication, please use the email listed above.
-  </p>
-
-</div>
-
-<!-- FOOTER -->
-<div class="footer">
-  © 2025 AURORA – AI Governance Research | Developed by Mostafa Abdel-Samee  
-</div>
-
-</body>
-</html>
-
-<!-- AURORA Live Metrics -->
-<section style="background:#f7f7f7; padding:20px; border-radius:12px; margin-top:30px;">
-  <h2 style="color:#2F4858;">AURORA – Live Research Metrics</h2>
-  <p>Real-time analytics retrieved from Zenodo for record <b>10.5281/zenodo.17095289</b>.</p>
-
-  <div id="auroraMetrics" style="padding:15px; background:white; border-radius:10px; border:1px solid #ddd;">
-    <p>Loading metrics...</p>
+  <!-- About -->
+  <div class="card">
+    <h2>About AURORA</h2>
+    <p>
+      AURORA is a multidisciplinary research project focused on building quantum-enhanced,
+      multi-layered oversight architectures for advanced AI ecosystems.
+      It aims to address security, governance, digital autonomy risks, 
+      AI-driven cyberattacks, and responsible deployment of powerful intelligent systems.
+    </p>
   </div>
 
-  <h3 style="margin-top:25px;">Citation (Copy & Use)</h3>
-  <pre style="background:#272822; color:#e6e6e6; padding:15px; border-radius:10px; white-space:pre-wrap;">
-Mostafa A. (2025). AURORA – Quantum-Enhanced AI Governance Framework (Version 2).
-Zenodo. https://doi.org/10.5281/zenodo.17710737
-  </pre>
-</section>
+  <!-- Researcher Info -->
+  <div class="card">
+    <h2>Research Lead</h2>
+    <p><strong>Name:</strong> Mostafa Abdel-Samee</p>
+    <p><strong>Email:</strong> <a href="mailto:Mostafa.AI.GOVERNINC.LAP@proton.me">
+      Mostafa.AI.GOVERNINC.LAP@proton.me</a></p>
+  </div>
 
+  <!-- Latest Version -->
+  <div class="card">
+    <h2>Latest Release</h2>
+    <p><strong>AURORA – Version 4 (Full Release)</strong></p>
+    <p>DOI:  
+      <a target="_blank" href="https://doi.org/10.5281/zenodo.17710737">
+      10.5281/zenodo.17710737</a>
+    </p>
+  </div>
+
+  <!-- Older Versions -->
+  <div class="card">
+    <h2>Previous Versions</h2>
+    <ul>
+      <li>
+        Parent Record:  
+        <a target="_blank" href="https://doi.org/10.5281/zenodo.17095289">
+        10.5281/zenodo.17095289</a>
+      </li>
+      <li>Version 1 – September 2025</li>
+      <li>Version 2 – November 2025</li>
+      <li>Version 4 – January 2026</li>
+    </ul>
+  </div>
+
+  <!-- Live Metrics -->
+  <div class="card">
+    <h2>Live Research Metrics</h2>
+    <p>Automatically synced from Zenodo in real time.</p>
+
+    <div id="metricsBox">
+      <p>Loading metrics...</p>
+    </div>
+  </div>
+
+  <!-- Citation -->
+  <div class="card">
+    <h2>Citation</h2>
+<pre style="background:#272822; color:#f8f8f2; padding:15px; border-radius:10px; white-space:pre-wrap;">
+Mostafa A. (2025). AURORA – Quantum-Enhanced AI Governance Framework (Version 4).
+Zenodo. https://doi.org/10.5281/zenodo.17710737
+</pre>
+  </div>
+
+  <!-- Contact -->
+  <div class="card" id="contact">
+    <h2>Contact</h2>
+    <p>For collaboration or academic inquiries, please reach out via email.</p>
+  </div>
+
+</div>
+
+<footer>
+  © 2026 AURORA Lab — AI Governance Research
+</footer>
+
+<!-- Metrics Script -->
 <script>
 fetch("https://zenodo.org/api/records/17095289")
-  .then(response => response.json())
+  .then(r => r.json())
   .then(data => {
     const views = data.stats?.views ?? "N/A";
     const downloads = data.stats?.downloads ?? "N/A";
-    const versions = data.metadata?.version ?? "N/A";
     const date = data.metadata?.publication_date ?? "N/A";
 
-    document.getElementById("auroraMetrics").innerHTML = `
+    document.getElementById("metricsBox").innerHTML = `
       <p><b>Total Views:</b> ${views}</p>
       <p><b>Total Downloads:</b> ${downloads}</p>
-      <p><b>Latest Version:</b> ${data.metadata.version}</p>
-      <p><b>Published on:</b> ${date}</p>
-      <p><a href="https://zenodo.org/records/17095289" target="_blank">View Full Metrics on Zenodo</a></p>
+      <p><b>Published:</b> ${date}</p>
+      <p><a target="_blank" href="https://zenodo.org/records/17095289">
+        View Full Metrics on Zenodo</a></p>
     `;
   })
-  .catch(error => {
-    document.getElementById("auroraMetrics").innerHTML = "Failed to load live metrics.";
+  .catch(() => {
+    document.getElementById("metricsBox").innerHTML =
+      "Metrics unavailable at the moment.";
   });
 </script>
+
+</body>
+</html>
