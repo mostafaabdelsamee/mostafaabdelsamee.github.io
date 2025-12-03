@@ -138,3 +138,41 @@ For academic collaboration, inquiries, or professional communication, please use
 
 </body>
 </html>
+
+<!-- AURORA Live Metrics -->
+<section style="background:#f7f7f7; padding:20px; border-radius:12px; margin-top:30px;">
+  <h2 style="color:#2F4858;">AURORA – Live Research Metrics</h2>
+  <p>Real-time analytics retrieved from Zenodo for record <b>10.5281/zenodo.17095289</b>.</p>
+
+  <div id="auroraMetrics" style="padding:15px; background:white; border-radius:10px; border:1px solid #ddd;">
+    <p>Loading metrics...</p>
+  </div>
+
+  <h3 style="margin-top:25px;">Citation (Copy & Use)</h3>
+  <pre style="background:#272822; color:#e6e6e6; padding:15px; border-radius:10px; white-space:pre-wrap;">
+Mostafa A. (2025). AURORA – Quantum-Enhanced AI Governance Framework (Version 2).
+Zenodo. https://doi.org/10.5281/zenodo.17710737
+  </pre>
+</section>
+
+<script>
+fetch("https://zenodo.org/api/records/17095289")
+  .then(response => response.json())
+  .then(data => {
+    const views = data.stats?.views ?? "N/A";
+    const downloads = data.stats?.downloads ?? "N/A";
+    const versions = data.metadata?.version ?? "N/A";
+    const date = data.metadata?.publication_date ?? "N/A";
+
+    document.getElementById("auroraMetrics").innerHTML = `
+      <p><b>Total Views:</b> ${views}</p>
+      <p><b>Total Downloads:</b> ${downloads}</p>
+      <p><b>Latest Version:</b> ${data.metadata.version}</p>
+      <p><b>Published on:</b> ${date}</p>
+      <p><a href="https://zenodo.org/records/17095289" target="_blank">View Full Metrics on Zenodo</a></p>
+    `;
+  })
+  .catch(error => {
+    document.getElementById("auroraMetrics").innerHTML = "Failed to load live metrics.";
+  });
+</script>
